@@ -1,0 +1,21 @@
+package com.example.springai.mcp.server.config;
+
+import com.example.springai.mcp.server.tools.UserProfileResourceProvider;
+import com.logaritex.mcp.spring.SpringAiMcpAnnotationProvider;
+import io.modelcontextprotocol.server.McpServerFeatures;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import java.util.List;
+
+/**
+ * @author luminion
+ */
+@Configuration(proxyBeanMethods = false)
+public class ResourceConfig {
+
+    @Bean
+    public List<McpServerFeatures.SyncResourceSpecification> resourceSpecs(UserProfileResourceProvider userProfileResourceProvider) {
+        return SpringAiMcpAnnotationProvider.createSyncResourceSpecifications(List.of(userProfileResourceProvider));
+    }
+}

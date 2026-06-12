@@ -10,7 +10,7 @@
     </parent>
     
     <groupId>com.example</groupId>
-    <artifactId>actuator</artifactId>
+    <artifactId>09-actuator</artifactId>
     <version>1</version>
 
     <properties>

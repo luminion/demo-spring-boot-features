@@ -24,9 +24,10 @@
         <module>09-actuator</module>
         <module>10-webflux</module>
         <module>11-r2dbc</module>
-        <module>12-ai</module>
-        <module>12-ai-mcp-client</module>
-        <module>12-ai-mcp-server</module>
+        <module>12-spring-ai</module>
+        <module>12-spring-ai-mcp-client</module>
+        <module>12-spring-ai-mcp-server</module>
+        <module>13-langchain4j</module>
     </modules>
 
 </project>
